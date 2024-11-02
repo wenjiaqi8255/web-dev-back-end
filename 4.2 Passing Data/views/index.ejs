@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+
+<body>
+  <!-- Write your code here -->
+  <% if (locals.wordCount) {%>
+    <h1>There are <%= wordCount %> characters in total.</h1>
+  <% } else{%>
+    <h1 class="default">Put in your name</h1>
+    <% } %>
+  <form action="/submit" method="POST">
+    <input type="text" name="fName" placeholder="First name">
+    <input type="text" name="lName" placeholder="Last name">
+    <input type="submit" value="OK">
+  </form>
+  
+</body>
+
+</html>
+
+<!--
+  为什么不能这么写？document.querySelector("h1.default").innerHTML=xxx
+-->

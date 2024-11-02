@@ -1,0 +1,15 @@
+{
+  "name": "learning.npm",
+  "version": "1.0.0",
+  "description": "I am learning npm",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jiaqi Wen",
+  "license": "ISC",
+  "dependencies": {
+    "superheroes": "^3.0.0"
+  }
+}
